@@ -9,6 +9,7 @@ import CpfCnpj from '../../components/Masks/CpfCnpj';
 
 const LoginScreen = () => {
     const [cpfCnpj, setCpfCnpj] = useState("");
+    // eslint-disable-next-line no-unused-vars
     const [mask, setMask] = useState("");
 
     return (
