@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="container">
       <BrowserRouter>
-        <Header/>
+        <Header />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="Login" element={<LoginScreen />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );

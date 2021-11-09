@@ -15,16 +15,18 @@ const NavBar = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto mx-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/login">Entidades</Nav.Link>
-                            <Nav.Link as={Link} to="/login">Vagas</Nav.Link>
-                            <Nav.Link as={Link} to="/login">Como funciona</Nav.Link>
-                            <Nav.Link as={Link} to="/login">Sobre nos</Nav.Link>
+                            <Nav.Link as={Link} to="/entidades">Entidades</Nav.Link>
+                            <Nav.Link as={Link} to="/vagas">Vagas</Nav.Link>
+                            <Nav.Link as={Link} to="/faq">Como funciona</Nav.Link>
+                            <Nav.Link as={Link} to="/sobre">Sobre nos</Nav.Link>
 
                         </Nav>
                         <Nav>
-                            <Button className="btn" as={Link} to="/login" variant="outline-secondary">
+                            <Button className="btn" as={Link} to="/login" 
+                                variant="outline-secondary">
                                 <FaUserAlt size={12}/>  Entrar</Button>
-                            <Button className="btn" variant="outline-secondary">Cadastrar</Button>
+                            <Button className="btn" as={Link} to="/cadastro" 
+                            variant="outline-secondary">Cadastrar</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -1,5 +1,6 @@
 .main {
     z-index: -1;
+    align-content: center;
 }
 
 .main h4{

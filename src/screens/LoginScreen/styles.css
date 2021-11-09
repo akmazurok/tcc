@@ -1,0 +1,30 @@
+.main {
+    z-index: -1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main h4{
+    padding: 2rem;
+    text-align: center;
+}
+
+.image{
+    width: 100%;
+}
+.login {
+    background-color: rgb(245, 241, 241);
+    padding: 2rem;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+}
+
+.form {
+    padding: 2rem 0rem;
+}
+
+.form a {
+    text-decoration: none;
+    
+}
