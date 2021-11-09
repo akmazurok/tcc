@@ -1,0 +1,8 @@
+.main {
+    z-index: -1;
+}
+
+.main h4{
+    padding-top: 2rem;
+    text-align: center;
+}
