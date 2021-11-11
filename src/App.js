@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -16,7 +17,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
-          <Route path="Login" element={<LoginScreen />} />
+          <Route path="login" element={<LoginScreen />} />
+          <Route path="cadastro" element={<RegisterScreen />} />
         </Routes>
         <Footer />
       </BrowserRouter>

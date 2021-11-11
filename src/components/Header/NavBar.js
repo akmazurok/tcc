@@ -18,7 +18,7 @@ const NavBar = () => {
                             <Nav.Link as={Link} to="/entidades">Entidades</Nav.Link>
                             <Nav.Link as={Link} to="/vagas">Vagas</Nav.Link>
                             <Nav.Link as={Link} to="/faq">Como funciona</Nav.Link>
-                            <Nav.Link as={Link} to="/sobre">Sobre nos</Nav.Link>
+                            <Nav.Link as={Link} to="/sobre">Sobre nós</Nav.Link>
 
                         </Nav>
                         <Nav>

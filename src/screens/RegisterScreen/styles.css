@@ -1,0 +1,16 @@
+.main {
+    z-index: -1;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.main h4{
+    padding: 2rem;
+    text-align: center;
+}
+
+.image{
+    width: 100%;
+}
+

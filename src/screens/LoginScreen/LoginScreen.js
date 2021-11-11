@@ -14,9 +14,7 @@ const LoginScreen = () => {
 
     return (
         <Container>
-            <div className="main">
-
-            </div>
+            <div className="margin d-none d-lg-block d-xl-nonel"></div>
             <Row>
                 <Col lg={7} md={6} sm={12}>
                     <img className="image" src={login} alt="login" />
@@ -27,9 +25,8 @@ const LoginScreen = () => {
                     <Form className="form">
                         <Form.Group className="mb-3" controlId="loginId">
                             <Form.Label>CPF ou CPNJ:</Form.Label>
-                            
-                                <CpfCnpj
-                                
+
+                            <CpfCnpj
                                 placeholder="Digite um CPF ou CNPJ"
                                 type="tel"
                                 value={cpfCnpj}
@@ -38,10 +35,8 @@ const LoginScreen = () => {
                                     setMask(type === "CPF");
                                 }}
                             />
-                         
+
                         </Form.Group>
-
-
 
                         <Form.Group className="mb-3" controlId="loginPassword">
                             <Form.Label>Senha:</Form.Label>
