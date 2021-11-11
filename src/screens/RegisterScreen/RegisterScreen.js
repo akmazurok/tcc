@@ -14,7 +14,7 @@ const RegisterScreen = () => {
 
     
     return (
-        <Container className="main">
+        <Container className="mainRegister">
             <img className="image" src={register} alt="register" />
             <h4>Cadastro</h4>
 
