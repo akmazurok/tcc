@@ -35,16 +35,16 @@ const LoginScreen = () => {
                                     setMask(type === "CPF");
                                 }}
                             />
-
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="loginPassword">
                             <Form.Label>Senha:</Form.Label>
                             <Form.Control type="password" placeholder="Digite a sua senha:" />
                         </Form.Group>
+
                         <Nav className="flex-column">
                             <Nav.Link as={Link} to="/resetarsenha">Esqueceu a senha?</Nav.Link>
-                            <Nav.Link as={Link} to="/cadastro">Nao tenho cadastro</Nav.Link>
+                            <Nav.Link as={Link} to="/cadastro">Não tenho cadastro</Nav.Link>
                         </Nav>
                         <Button variant="primary" type="submit">
                             Entrar

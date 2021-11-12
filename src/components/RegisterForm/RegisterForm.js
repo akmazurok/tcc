@@ -1,4 +1,5 @@
 import React from 'react'
+import FormCnpj from './FormCnpj';
 import FormCpf from './FormCpf';
 
 const RegisterForm = (props) => {
@@ -11,7 +12,7 @@ const RegisterForm = (props) => {
     }
     else if (props.value === "cnpj") {
         return (
-            <div>FormCnpj</div>
+            <div><FormCnpj /></div>
         );
     }
 
@@ -22,4 +23,4 @@ const RegisterForm = (props) => {
     }
 }
 
-export default RegisterForm
+export default RegisterForm;

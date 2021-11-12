@@ -1,26 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import './styles.css';
 
-const FormCpf = () => {
-    const [social, setSocial] = useState(false);
-
-    function handleChange(event) {
-        setSocial(event.target.checked);
-    }
-
-    const NomeSocial = () => {
-        if (social) {
-            return (
-                <Form.Group className="mb-3" controlId="registerNameS">
-                    <Form.Label>Nome Social </Form.Label>
-                    <Form.Control placeholder="Digite o Nome Social" />
-                </Form.Group>
-            );
-        }
-    }
-
-
+const FormCnpj = () => {
     return (
         <div>
             <Form className="form">
@@ -28,51 +10,28 @@ const FormCpf = () => {
                     <small>*Campos de preenchimento obrigatório</small>
                 </div>
 
-
                 {/* COLOCAR MASCARA */}
-                <Form.Group className="mb-3" controlId="registerCpf">
-                    <Form.Label>CPF <em>*</em></Form.Label>
-                    <Form.Control autoFocus type="CPF" placeholder="Digite seu CPF" />
+                <Form.Group className="mb-3" controlId="registerCnpj">
+                    <Form.Label>CNPJ <em>*</em></Form.Label>
+                    <Form.Control autoFocus type="CNPJ" placeholder="Digite o CNPJ" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="registerName">
-                    <Form.Label>Nome Completo <em>*</em></Form.Label>
-                    <Form.Control placeholder="Digite seu Nome Completo" />
+                <Form.Group className="mb-3" controlId="registerRazao">
+                    <Form.Label>Razão Social <em>*</em></Form.Label>
+                    <Form.Control placeholder="Digite a Razão Social da Entidade" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="registerSocial">
-                    <Form.Check checked={social}
-                        onChange={handleChange}
-                        label="Desejo usar meu Nome Social"
-                    />
+                <Form.Group className="mb-3" controlId="registerNome">
+                    <Form.Label>Nome Fantasia <em>*</em></Form.Label>
+                    <Form.Control placeholder="Digite o Nome Fantasia da Entidade" />
                 </Form.Group>
 
-                {/* input nome social */}
-                {NomeSocial()}
+                <Form.Group className="mb-3" controlId="registerResposavel">
+                    <Form.Label>Nome do(a) Responsável pelo cadastro <em>*</em></Form.Label>
+                    <Form.Control
+                        placeholder="Digite o Nome do(a) Responsável pelo cadastro" />
+                </Form.Group>
 
-                <Row >
-                    <Col md="auto">
-                        <Form.Group className="mb-3" controlId="registerGender">
-                            <Form.Label>Identificação de Gênero <em>*</em></Form.Label>
-                            <Form.Select
-                                placeholder="Selecione...">
-                                <option>Selecione...</option>
-                                <option value="1">Feminino (Cis ou Trans)</option>
-                                <option value="2">Masculino (Cis ou Trans)</option>
-                                <option value="3">Outro</option>
-                                <option value="4">Prefiro não responder</option>
-                            </Form.Select>
-                        </Form.Group>
-                    </Col>
-                    <Col md="auto">
-                        <Form.Group className="mb-3" controlId="registerBirth">
-                            <Form.Label>Data de Nascimento <em>*</em></Form.Label>
-                            <Form.Control type="date"
-                                name='Data de Nascimento'
-                            />
-                        </Form.Group>
-                    </Col>
-                </Row>
 
                 {/*COLOCAR MASCARA */}
                 <Form.Group className="mb-3" controlId="registerEmail">
@@ -135,12 +94,12 @@ const FormCpf = () => {
 
                 <Form.Group className="mb-3" controlId="registerPassword">
                     <Form.Label>Senha </Form.Label>
-                    <Form.Control type="password" placeholder="Digite a sua senha" />
+                    <Form.Control type="password" placeholder="Digite a senha" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="confirmPassword">
                     <Form.Label>Confirmar Senha </Form.Label>
-                    <Form.Control type="password" placeholder="Confirme a sua senha" />
+                    <Form.Control type="password" placeholder="Confirme a senha" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="registerTerms">
@@ -149,6 +108,12 @@ const FormCpf = () => {
                         com os Termos de uso e privacidade:"
                     />
                 </Form.Group>
+            
+                <div className="obs">
+                    <small>ATENÇÃO: O cadastro passará por avaliação antes de ser habilitado
+                        para a publicação de vagas
+                    </small>
+                </div>
 
                 <Button variant="warning" type="submit">
                     Limpar
@@ -156,9 +121,10 @@ const FormCpf = () => {
                 <Button variant="primary" type="submit">
                     Cadastrar
                 </Button>
-            </Form>
+
+            </Form >
         </div>
     )
 }
 
-export default FormCpf
+export default FormCnpj;
