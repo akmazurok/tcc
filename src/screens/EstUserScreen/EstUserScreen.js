@@ -1,12 +1,8 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
-import './styles.css';
+import {Container, Row, Col} from 'react-bootstrap';
 import SideBar from './SideBar/SideBar';
-import VagasAbertas from './VagasAbertas';
-import VagasEncerradas from './VagasEncerradas';
 
-
-const EntUserScreen = () => {
+const EstUserScreen = () => {
     return (
         <Container className="mainUserScreen">
             <div>
@@ -20,20 +16,17 @@ const EntUserScreen = () => {
 
                 <Col md={9}>
                     <Row className="vagas">
-                        <VagasAbertas />
+                   
                     </Row>
 
                     <Row className="vagas">
-                        <VagasEncerradas/>
+                     
                     </Row>
                 </Col>
             </Row>
 
         </Container>
-    );
-};
+    )
+}
 
-
-
-export default EntUserScreen;
-
+export default EstUserScreen
