@@ -1,8 +1,13 @@
 .footer {
     height: 40px;
-    margin-top: 2rem;
+    margin-top: 4rem;
     align-content: center;
     text-align: center;
     width: 100%;
     bottom: 0;
+    
+}
+
+.footer a{
+    color: rgb(117, 114, 114);
 }
