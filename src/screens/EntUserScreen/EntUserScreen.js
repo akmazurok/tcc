@@ -5,10 +5,10 @@ import SideBar from './SideBar/SideBar';
 import VagasAbertas from './VagasAbertas';
 import VagasEncerradas from './VagasEncerradas';
 
-
 const EntUserScreen = () => {
     return (
         <Container className="mainUserScreen">
+
             <div>
                 <h4>Tela da Entidade</h4>
             </div>
@@ -24,8 +24,9 @@ const EntUserScreen = () => {
                     </Row>
 
                     <Row className="vagas">
-                        <VagasEncerradas/>
+                        <VagasEncerradas />
                     </Row>
+
                 </Col>
             </Row>
 

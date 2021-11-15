@@ -1,17 +1,20 @@
 .mainUserScreen {
     z-index: -1;
-   
 }
 
-.mainUserScreen h4{
+.mainUserScreen h4 {
     padding: 2rem;
     text-align: center;
 }
 
-.vagas h5{
+.vagas h5 {
     padding-top: 2rem;
 }
 
-.text-right{
+.text-right {
     float: right;
+}
+
+.form h5 {
+    text-align: center;
 }

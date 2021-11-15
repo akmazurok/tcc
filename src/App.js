@@ -11,6 +11,7 @@ import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 import EntUserScreen from './screens/EntUserScreen/EntUserScreen';
 import EstUserScreen from './screens/EstUserScreen/EstUserScreen';
 import AdmUserScreen from './screens/AdmUserScreen/AdmUserScreen';
+import CadastrarVagaScreen from './screens/EntUserScreen/CadastrarVagaScreen/CadastrarVagaScreen';
 
 
 /*/perfilentidade
@@ -42,6 +43,7 @@ function App() {
           <Route path="entidade" element={<EntUserScreen />} />
           <Route path="estudante" element={<EstUserScreen />} />
           <Route path="admin" element={<AdmUserScreen />} />
+          <Route path="cadastrarvaga" element={<CadastrarVagaScreen />} />
         </Routes>
         <Footer />
       </BrowserRouter>
