@@ -11,17 +11,17 @@ const SideBar = (props) => {
                 <Container>
                     <Col>
                         <Row>
-                            <Navbar.Brand href="/estudante">Painel do Estudante</Navbar.Brand>
+                            <Navbar.Brand href="/entidade">Painel do Administrador</Navbar.Brand>
                             <Navbar.Toggle
                                 aria-controls="responsive-navbar-nav" />
                         </Row>
                         <Row>
                             <Navbar.Collapse id="responsive-navbar-nav">
-                                <Nav defaultActiveKey="/estudante" className="flex-column">
-                                    <Nav.Link as={Link} to="/">Meu perfil</Nav.Link>
-                                    <Nav.Link eventKey="/pesquisarvagas">Pesquisar Vagas</Nav.Link>
-                                    <Nav.Link eventKey="/inscricoes">Vagas cadastradas</Nav.Link>
-                                    <Nav.Link eventKey="/listarinscricoes">Ver inscrições</Nav.Link>
+                                <Nav defaultActiveKey="/admin" className="flex-column">
+                                    <Nav.Link as={Link} to="/admin">Meu perfil</Nav.Link>
+                                    <Nav.Link eventKey="/listarcadastros">Listar cadastros</Nav.Link>
+                                    <Nav.Link eventKey="/listarvagas">Listar vagas</Nav.Link>
+                                    <Nav.Link eventKey="/listarusuarios">Listar usuários</Nav.Link>
 
                                 </Nav>
                             </Navbar.Collapse>

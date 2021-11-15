@@ -1,22 +1,24 @@
 .mainUserScreen {
     z-index: -1;
-   
 }
 
-.mainUserScreen h4{
+.mainUserScreen h4 {
     padding: 2rem;
     text-align: center;
 }
 
-.vagas h5{
+.vagas h5 {
     padding-top: 2rem;
 }
 
-.vagas span{
-    font-style: italic;
-    
+.text-right {
+    float: right;
 }
 
-.text-right{
+#status {
     float: right;
+}
+
+.vagas a {
+    color: rgb(116, 113, 113);
 }

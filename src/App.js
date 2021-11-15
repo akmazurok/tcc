@@ -9,12 +9,25 @@ import HomeScreen from './screens/HomeScreen/HomeScreen';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 import EntUserScreen from './screens/EntUserScreen/EntUserScreen';
+import EstUserScreen from './screens/EstUserScreen/EstUserScreen';
+import AdmUserScreen from './screens/AdmUserScreen/AdmUserScreen';
 
 
-/*/perfil_entidade
-  /cadastrar_vaga
-  /listar_vagas
-  /listar_inscricoes
+/*/perfilentidade
+  /cadastrarvaga
+  /listarvagas
+  /listarinscricoes
+
+  /resetarsenha
+  
+  /pesquisarvagas
+  /inscricoes
+  /listarinscricoes
+
+  /listarcadastros
+  /listarvagas
+  /listarusuarios"
+  
   */                                  
 
 function App() {
@@ -27,6 +40,8 @@ function App() {
           <Route path="login" element={<LoginScreen />} />
           <Route path="cadastro" element={<RegisterScreen />} />
           <Route path="entidade" element={<EntUserScreen />} />
+          <Route path="estudante" element={<EstUserScreen />} />
+          <Route path="admin" element={<AdmUserScreen />} />
         </Routes>
         <Footer />
       </BrowserRouter>

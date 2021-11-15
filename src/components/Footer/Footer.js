@@ -12,9 +12,12 @@ const Footer = () => {
                 <Nav.Link as={Link} to="login">Login</Nav.Link>
                 <Nav.Link as={Link} to="cadastro">Cadastro</Nav.Link>
                 <Nav.Link as={Link} to="entidade">Tela Entidade</Nav.Link>
+                <Nav.Link as={Link} to="estudante">Tela Estudante</Nav.Link>
+                <Nav.Link as={Link} to="admin">Tela Administrador</Nav.Link>
             </Nav>
         </div>
     )
 }
 
 export default Footer;
+
