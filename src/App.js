@@ -16,12 +16,13 @@ import ListarVagasAdmin from './screens/AdmUserScreen/ListarVagasAdmin';
 import ListarEntidadesAdmin from './screens/AdmUserScreen/ListarEntidadesAdmin';
 import ListarVagasScreen from './screens/EntUserScreen/ListarVagasScreen/ListarVagasScreen';
 import DetalheVagaScreen from './screens/EntUserScreen/DetalheVagaScreen/DetalheVagaScreen';
+import VagasEstudanteScreen from './screens/EstUserScreen/VagasEstudanteScreen/VagasEstudanteScreen';
+import VagasGeral from './screens/HomeScreen/VagasGeral';
+import DetalheVagaEstudanteScreen from './screens/EstUserScreen/DetalheVagaEstudanteScreen/DetalheVagaEstudanteScreen';
+import DetalheVaga from './screens/HomeScreen/DetalheVagaGeral/DetalheVaga';
 
 
-/*/perfilentidade
-    /listarvagas
-  /listarinscricoes
-
+/*
   /resetarsenha
   
   /pesquisarvagas
@@ -51,6 +52,10 @@ function App() {
           <Route path="entidade/vagas/detalhe" element={<DetalheVagaScreen />} />
           <Route path="admin/vagas" element={<ListarVagasAdmin />} />
           <Route path="admin/entidades" element={<ListarEntidadesAdmin />} />
+          <Route path="estudante/vagas" element={<VagasEstudanteScreen/>} />
+          <Route path="estudante/vagas/detalhe" element={<DetalheVagaEstudanteScreen />} />
+          <Route path="vagas" element={<VagasGeral/>} />
+          <Route path="vagas/detalhe" element={<DetalheVaga />}/>
         
          
 

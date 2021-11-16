@@ -1,0 +1,30 @@
+.detalhes {
+    padding: 1rem;
+}
+
+.inscritos{
+    padding: 1rem;
+}
+
+.acoes {
+    padding: 2rem;
+    float: right;
+}
+
+#presenca {
+    padding: 2rem;
+    font-style: italic;
+}
+
+.avatar {
+    max-width: 90px;
+    align-self: center;
+    padding: 1rem;
+    background-color: #ccc;
+
+}
+
+.analisar {
+    padding: 1rem;
+    float: right;
+}
