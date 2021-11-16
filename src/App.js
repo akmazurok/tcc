@@ -12,11 +12,14 @@ import EntUserScreen from './screens/EntUserScreen/EntUserScreen';
 import EstUserScreen from './screens/EstUserScreen/EstUserScreen';
 import AdmUserScreen from './screens/AdmUserScreen/AdmUserScreen';
 import CadastrarVagaScreen from './screens/EntUserScreen/CadastrarVagaScreen/CadastrarVagaScreen';
+import ListarVagasAdmin from './screens/AdmUserScreen/ListarVagasAdmin';
+import ListarEntidadesAdmin from './screens/AdmUserScreen/ListarEntidadesAdmin';
+import ListarVagasScreen from './screens/EntUserScreen/ListarVagasScreen/ListarVagasScreen';
+import DetalheVagaScreen from './screens/EntUserScreen/DetalheVagaScreen/DetalheVagaScreen';
 
 
 /*/perfilentidade
-  /cadastrarvaga
-  /listarvagas
+    /listarvagas
   /listarinscricoes
 
   /resetarsenha
@@ -29,7 +32,7 @@ import CadastrarVagaScreen from './screens/EntUserScreen/CadastrarVagaScreen/Cad
   /listarvagas
   /listarusuarios"
   
-  */                                  
+  */
 
 function App() {
   return (
@@ -43,7 +46,15 @@ function App() {
           <Route path="entidade" element={<EntUserScreen />} />
           <Route path="estudante" element={<EstUserScreen />} />
           <Route path="admin" element={<AdmUserScreen />} />
-          <Route path="cadastrarvaga" element={<CadastrarVagaScreen />} />
+          <Route path="entidade/cadastrarvaga" element={<CadastrarVagaScreen />} />
+          <Route path="entidade/vagas" element={<ListarVagasScreen />} />
+          <Route path="entidade/vagas/detalhe" element={<DetalheVagaScreen />} />
+          <Route path="admin/vagas" element={<ListarVagasAdmin />} />
+          <Route path="admin/entidades" element={<ListarEntidadesAdmin />} />
+        
+         
+
+
         </Routes>
         <Footer />
       </BrowserRouter>

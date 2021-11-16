@@ -122,7 +122,7 @@ const FormVaga = () => {
                     </small>
                 </div>
 
-                <Button variant="warning" type="submit">
+                <Button variant="warning" type="reset" value="Reset">
                     Limpar
                 </Button>
                 <Button variant="primary" type="submit">

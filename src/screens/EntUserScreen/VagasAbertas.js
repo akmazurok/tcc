@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Card, CardGroup, Button, Badge } from 'react-bootstrap';
 import './styles.css';
 
@@ -15,7 +16,7 @@ const VagasAbertas = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Integer lobortis, diam sit amet finibus lobortis.
                         </Card.Text>
-                        <Button variant="primary">Detalhes</Button>
+                        <Button variant="primary" as={Link} to="/entidade/vagas/detalhe" >Detalhes</Button>
 
                     </Card.Body>
                     <Card.Footer>
@@ -49,7 +50,7 @@ const VagasAbertas = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Integer lobortis, diam sit amet finibus lobortis.
                         </Card.Text>
-                        <Button variant="primary">Detalhes</Button>
+                        <Button variant="primary" as={Link} to="/entidade/vagas/detalhe">Detalhes</Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Publicada em 20/05/2021</small>
