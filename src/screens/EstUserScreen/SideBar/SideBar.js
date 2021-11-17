@@ -18,10 +18,10 @@ const SideBar = (props) => {
                         <Row>
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav defaultActiveKey="/estudante" className="flex-column">
-                                    <Nav.Link as={Link} to="/">Meu perfil</Nav.Link>
+                                    <Nav.Link as={Link} to="/estudante/perfil">Meu perfil</Nav.Link>
                                     <Nav.Link as={Link} to="/estudante/vagas">Pesquisar Vagas</Nav.Link>
-                                    <Nav.Link eventKey="/inscricoes">Vagas cadastradas</Nav.Link>
-                                    <Nav.Link eventKey="/listarinscricoes">Ver inscrições</Nav.Link>
+                                    <Nav.Link as={Link} to="/estudante/listarincricoes">Minhas inscrições</Nav.Link>
+                                    <Nav.Link as={Link} to="/estudante/certificados">Certificados</Nav.Link>
 
                                 </Nav>
                             </Navbar.Collapse>

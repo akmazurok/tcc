@@ -9,7 +9,7 @@ import vaga3 from "../../img/vaga3.jpg";
 const VagasDestaque = () => {
     return (
         <>
-            <div className="card-group">
+            <div className="card-group" id="destaque">
                 <Card className="card">
                     <Card.Img variant="top" src={vaga1} />
                     <Card.Body>
@@ -18,7 +18,7 @@ const VagasDestaque = () => {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Detalhes</Button>
+                        <Button variant="primary" as={Link} to="/vagas/detalhe">Detalhes</Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Publicada em 20/05/2021</small>
@@ -33,7 +33,7 @@ const VagasDestaque = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Integer lobortis, diam sit amet finibus lobortis.
                         </Card.Text>
-                        <Button variant="primary">Detalhes</Button>
+                        <Button variant="primary" as={Link} to="/vagas/detalhe">Detalhes</Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Publicada em 20/05/2021</small>
@@ -48,7 +48,7 @@ const VagasDestaque = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Integer lobortis, diam sit amet finibus lobortis.
                         </Card.Text>
-                        <Button variant="primary">Detalhes</Button>
+                        <Button variant="primary" as={Link} to="/vagas/detalhe">Detalhes</Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Publicada em 20/05/2021</small>
@@ -63,7 +63,7 @@ const VagasDestaque = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Integer lobortis, diam sit amet finibus lobortis.
                         </Card.Text>
-                        <Button variant="primary">Detalhes</Button>
+                        <Button variant="primary" as={Link} to="/vagas/detalhe">Detalhes</Button>
                     </Card.Body>
                     <Card.Footer>
                         <small className="text-muted">Publicada em 20/05/2021</small>

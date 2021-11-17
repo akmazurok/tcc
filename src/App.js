@@ -20,18 +20,19 @@ import VagasEstudanteScreen from './screens/EstUserScreen/VagasEstudanteScreen/V
 import VagasGeral from './screens/HomeScreen/VagasGeral';
 import DetalheVagaEstudanteScreen from './screens/EstUserScreen/DetalheVagaEstudanteScreen/DetalheVagaEstudanteScreen';
 import DetalheVaga from './screens/HomeScreen/DetalheVagaGeral/DetalheVaga';
+import CertificadosScreen from './screens/EstUserScreen/CertificadosScreen';
+import EstudanteInscricoes from './screens/EstUserScreen/EstudanteInscricoes';
+import Entidades from './screens/HomeScreen/Telas/Entidades';
+import Faq from './screens/HomeScreen/Telas/Faq';
+import Sobre from './screens/HomeScreen/Telas/Sobre';
+import AdmPerfilScreen from './screens/AdmUserScreen/AdmPerfilScreen/AdmPerfilScreen';
+import EstPerfilScreen from './screens/EstUserScreen/EstPerfilScreen/EstPerfilScreen';
+import EntPerfilScreen from './screens/EntUserScreen/EntPerfilScreen/EntPerfilScreen';
+import RedefinirSenhaScreen from './screens/LoginScreen/RedefinirSenhaScreen';
 
 
 /*
-  /resetarsenha
   
-  /pesquisarvagas
-  /inscricoes
-  /listarinscricoes
-
-  /listarcadastros
-  /listarvagas
-  /listarusuarios"
   
   */
 
@@ -43,21 +44,29 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="login" element={<LoginScreen />} />
+          <Route path="redefinirsenha" element={<RedefinirSenhaScreen />} />
           <Route path="cadastro" element={<RegisterScreen />} />
           <Route path="entidade" element={<EntUserScreen />} />
           <Route path="estudante" element={<EstUserScreen />} />
           <Route path="admin" element={<AdmUserScreen />} />
           <Route path="entidade/cadastrarvaga" element={<CadastrarVagaScreen />} />
           <Route path="entidade/vagas" element={<ListarVagasScreen />} />
+          <Route path="entidade/perfil" element={<EntPerfilScreen />} />
           <Route path="entidade/vagas/detalhe" element={<DetalheVagaScreen />} />
           <Route path="admin/vagas" element={<ListarVagasAdmin />} />
           <Route path="admin/entidades" element={<ListarEntidadesAdmin />} />
-          <Route path="estudante/vagas" element={<VagasEstudanteScreen/>} />
+          <Route path="admin/perfil" element={<AdmPerfilScreen />} />
+          <Route path="estudante/vagas" element={<VagasEstudanteScreen />} />
+          <Route path="estudante/perfil" element={<EstPerfilScreen />} />
           <Route path="estudante/vagas/detalhe" element={<DetalheVagaEstudanteScreen />} />
-          <Route path="vagas" element={<VagasGeral/>} />
-          <Route path="vagas/detalhe" element={<DetalheVaga />}/>
-        
-         
+          <Route path="estudante/certificados" element={<CertificadosScreen />} />
+          <Route path="estudante/listarincricoes" element={<EstudanteInscricoes />} />
+          <Route path="vagas" element={<VagasGeral />} />
+          <Route path="vagas/detalhe" element={<DetalheVaga />} />
+          <Route path="entidades" element={<Entidades />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="sobre" element={<Sobre />} />
+
 
 
         </Routes>

@@ -1,22 +1,28 @@
 .mainUserScreen {
     z-index: -1;
-   
 }
 
-.mainUserScreen h4{
+.mainUserScreen h4 {
     padding: 2rem;
     text-align: center;
 }
 
-.vagas h5{
+.vagas h5 {
     padding-top: 2rem;
 }
 
-.vagas span{
+.vagas span {
     font-style: italic;
-    
 }
 
-.text-right{
+.text-right {
     float: right;
 }
+
+.descricao {
+    padding: 2rem;
+}
+
+#destaque a{
+    color: #fff;
+ }

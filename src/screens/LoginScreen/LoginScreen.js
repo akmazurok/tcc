@@ -43,7 +43,7 @@ const LoginScreen = () => {
                         </Form.Group>
 
                         <Nav className="flex-column">
-                            <Nav.Link as={Link} to="/resetarsenha">Esqueceu a senha?</Nav.Link>
+                            <Nav.Link as={Link} to="/redefinirsenha">Esqueceu a senha?</Nav.Link>
                             <Nav.Link as={Link} to="/cadastro">Não tenho cadastro</Nav.Link>
                         </Nav>
                         <Button variant="primary" type="submit">

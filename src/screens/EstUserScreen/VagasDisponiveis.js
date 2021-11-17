@@ -8,8 +8,8 @@ const VagasDisponiveis = () => {
     return (
         <div>
             <h5>Vagas Disponíveis</h5>
-            <CardGroup>
-                <Card className="card">
+            <CardGroup id="destaque">
+                <Card className="card" >
                     <Card.Body>
                         <Card.Title>Vaga 4</Card.Title>
                         <Card.Text>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Row, Col, Form, Card, Badge } from 'react-bootstrap';
 import SearchBar from './SearchBar/SearchBar';
 import './styles.css';
@@ -29,7 +30,7 @@ const Vagas = () => {
                             <b>Data: </b> 02/07/2021<br />
                             <b>Horário: </b> 18: 00 - 21: 00<br />
                             <b>Vagas: </b> 5 <br />
-                            <a href="/estudante/vagas/detalhe">Detalhes</a> <br />
+                            <Card.Link as={Link} to="/estudante/vagas/detalhe">Detalhes</Card.Link><br/>
                             <Badge id="staus" bg="success">Aberta</Badge>
 
                         </Card.Body>
@@ -44,7 +45,7 @@ const Vagas = () => {
                             <b>Data: </b> 02/07/2021<br />
                             <b>Horário: </b> 18: 00 - 21: 00<br />
                             <b>Vagas: </b> 5 <br />
-                            <a href="/estudante/vagas/detalhe">Detalhes</a> <br />
+                            <Card.Link as={Link} to="/estudante/vagas/detalhe">Detalhes</Card.Link><br/>
                             <Badge id="staus" bg="success">Aberta</Badge>
 
                         </Card.Body>
@@ -59,7 +60,7 @@ const Vagas = () => {
                             <b>Data: </b> 02/07/2021<br />
                             <b>Horário: </b> 18: 00 - 21: 00<br />
                             <b>Vagas: </b> 5 <br />
-                            <a href="/estudante/vagas/detalhe">Detalhes</a> <br />
+                            <Card.Link as={Link} to="/estudante/vagas/detalhe">Detalhes</Card.Link><br/>
                             <Badge id="staus" bg="secondary">Encerrada</Badge>
 
                         </Card.Body>
@@ -74,7 +75,7 @@ const Vagas = () => {
                             <b>Data: </b> 02/07/2021<br />
                             <b>Horário: </b> 18: 00 - 21: 00<br />
                             <b>Vagas: </b> 5 <br />
-                            <a href="/estudante/vagas/detalhe">Detalhes</a> <br />
+                            <Card.Link as={Link} to="/estudante/vagas/detalhe">Detalhes</Card.Link><br/>
                             <Badge id="staus" bg="danger">Inscrito</Badge>
 
                         </Card.Body>
