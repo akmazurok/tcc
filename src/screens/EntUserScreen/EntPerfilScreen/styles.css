@@ -1,0 +1,44 @@
+.mainPerfilScreen h5 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.mainPerfilScreen h4 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.detalhes {
+    padding: 1rem;
+}
+
+.acoes {
+    padding: 2rem;
+    float: right;
+}
+
+.perfil {
+    padding: 2rem;
+}
+
+.avatar {
+    max-width: 120px;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+.dados {
+    margin-top: 1rem;
+}
+
+.text-right {
+    float: right;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card a{
+    color: #fff;
+}
