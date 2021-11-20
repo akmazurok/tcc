@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SideBar from './SideBar/SideBar';
 import CadastrosAprovacao from './CadastrosAprovacao';
 import VagasAprovacao from './VagasAprovacao';
+import './styles.css';
 
 const AdmUserScreen = () => {
     return (
@@ -18,11 +19,11 @@ const AdmUserScreen = () => {
                     </Col>
 
                     <Col md={9}>
-                        <Row className="vagas">
+                        <Row >
                             <CadastrosAprovacao />
                         </Row>
 
-                        <Row className="vagas">
+                        <Row >
                             <VagasAprovacao />
                         </Row>
                     </Col>

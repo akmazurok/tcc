@@ -20,7 +20,7 @@ const EstPerfil = () => {
                 </Form.Group>
             </div>
 
-            <Card className="card">
+            <Card className="cartao">
                 <h6>Cursos</h6>
                 <div className="obs">
                     <small>É necessário ter ao menos um curso ativo cadastrado</small>
@@ -77,7 +77,7 @@ const EstPerfil = () => {
                     </Accordion.Item>
 
                 </Accordion>
-                <Card className="card">
+                <Card className="cartao">
                     <h6>Cursos cadastrados</h6>
                     <Table responsive>
                         <thead>

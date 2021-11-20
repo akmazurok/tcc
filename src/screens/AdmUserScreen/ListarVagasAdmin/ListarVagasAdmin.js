@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import SideBar from '../AdmUserScreen/SideBar/SideBar';
+import SideBar from '../SideBar/SideBar';
+import AdminVagas from './AdminVagas';
 
-const ListarEntidadesAdmin = () => {
+
+const ListarVagasAdmin = () => {
     return (
         <Container className="mainUserScreen">
 
@@ -16,7 +18,7 @@ const ListarEntidadesAdmin = () => {
                 </Col>
 
                 <Col md={9}>
-                   Lista de Entidades e combobox para filtrar por status
+                    <AdminVagas />
                 </Col>
             </Row>
 
@@ -24,4 +26,4 @@ const ListarEntidadesAdmin = () => {
     )
 }
 
-export default ListarEntidadesAdmin;
+export default ListarVagasAdmin;

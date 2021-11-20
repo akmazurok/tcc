@@ -11,7 +11,7 @@ const SideBar = (props) => {
                 <Container>
                     <Col>
                         <Row>
-                            <Navbar.Brand href="/entidade">Painel do Administrador</Navbar.Brand>
+                            <Navbar.Brand as={Link} to="/admin">Painel do Administrador</Navbar.Brand>
                             <Navbar.Toggle
                                 aria-controls="responsive-navbar-nav" />
                         </Row>

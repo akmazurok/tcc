@@ -12,8 +12,8 @@ import EntUserScreen from './screens/EntUserScreen/EntUserScreen';
 import EstUserScreen from './screens/EstUserScreen/EstUserScreen';
 import AdmUserScreen from './screens/AdmUserScreen/AdmUserScreen';
 import CadastrarVagaScreen from './screens/EntUserScreen/CadastrarVagaScreen/CadastrarVagaScreen';
-import ListarVagasAdmin from './screens/AdmUserScreen/ListarVagasAdmin';
-import ListarEntidadesAdmin from './screens/AdmUserScreen/ListarEntidadesAdmin';
+import ListarVagasAdmin from './screens/AdmUserScreen/ListarVagasAdmin/ListarVagasAdmin';
+import ListarEntidadesAdmin from './screens/AdmUserScreen/ListarEntidadesAdmin/ListarEntidadesAdmin';
 import ListarVagasScreen from './screens/EntUserScreen/ListarVagasScreen/ListarVagasScreen';
 import DetalheVagaScreen from './screens/EntUserScreen/DetalheVagaScreen/DetalheVagaScreen';
 import VagasEstudanteScreen from './screens/EstUserScreen/VagasEstudanteScreen/VagasEstudanteScreen';
@@ -29,6 +29,7 @@ import AdmPerfilScreen from './screens/AdmUserScreen/AdmPerfilScreen/AdmPerfilSc
 import EstPerfilScreen from './screens/EstUserScreen/EstPerfilScreen/EstPerfilScreen';
 import EntPerfilScreen from './screens/EntUserScreen/EntPerfilScreen/EntPerfilScreen';
 import RedefinirSenhaScreen from './screens/LoginScreen/RedefinirSenhaScreen';
+import DetalheVagaAdminScreen from './screens/AdmUserScreen/DetalheVagaAdminScreen/DetalheVagaAdminScreen';
 
 
 /*
@@ -54,6 +55,7 @@ function App() {
           <Route path="entidade/perfil" element={<EntPerfilScreen />} />
           <Route path="entidade/vagas/detalhe" element={<DetalheVagaScreen />} />
           <Route path="admin/vagas" element={<ListarVagasAdmin />} />
+          <Route path="admin/vagas/detalhe" element={<DetalheVagaAdminScreen />} />
           <Route path="admin/entidades" element={<ListarEntidadesAdmin />} />
           <Route path="admin/perfil" element={<AdmPerfilScreen />} />
           <Route path="estudante/vagas" element={<VagasEstudanteScreen />} />
