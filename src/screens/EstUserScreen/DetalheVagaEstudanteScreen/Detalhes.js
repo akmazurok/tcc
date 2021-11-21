@@ -4,7 +4,9 @@ import './styles.css';
 
 
 const Detalhes = () => {
-    return (
+   
+
+       return (
         <div className="detalhes">
             <b>Título da vaga: </b> Título da Vaga <br />
             <b>Nome da Entidade: </b> Nome Fantasia da Entidade<br />
@@ -20,12 +22,10 @@ const Detalhes = () => {
             <b>Número de vagas: </b> 5<br />
             <b>Status: </b>
             <Badge id="staus" bg="success">Aberta</Badge>
-            
+
             <div className="acoes">
-                <Button variant="primary">
-                    Inscricao
-                </Button>
-               
+                <Button variant="primary">Inscricao</Button>
+
             </div>
         </div>
     )

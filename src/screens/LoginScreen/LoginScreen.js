@@ -46,7 +46,7 @@ const LoginScreen = () => {
                             <Nav.Link as={Link} to="/redefinirsenha">Esqueceu a senha?</Nav.Link>
                             <Nav.Link as={Link} to="/cadastro">Não tenho cadastro</Nav.Link>
                         </Nav>
-                        <Button variant="primary" type="submit">
+                        <Button as={Link} to="/estudante" variant="primary">
                             Entrar
                         </Button>
                     </Form>

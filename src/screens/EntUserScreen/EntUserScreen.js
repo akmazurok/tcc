@@ -19,11 +19,11 @@ const EntUserScreen = () => {
                 </Col>
 
                 <Col md={9}>
-                    <Row className="vagas">
+                    <Row className="vagasdestaque">
                         <VagasAbertas />
                     </Row>
 
-                    <Row className="vagas">
+                    <Row className="vagasdestaque">
                         <VagasEncerradas />
                     </Row>
 

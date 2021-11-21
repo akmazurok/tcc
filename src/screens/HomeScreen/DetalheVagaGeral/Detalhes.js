@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Badge, Button } from 'react-bootstrap';
 import './styles.css';
 
@@ -20,12 +21,12 @@ const Detalhes = () => {
             <b>Número de vagas: </b> 5<br />
             <b>Status: </b>
             <Badge id="staus" bg="success">Aberta</Badge>
-            <Button variant="primary">
+            <Button variant="primary" as={Link} to="/login">
                 Inscricao
             </Button>
 
             <div className="acoes">
-                <Button variant="secondary">
+                <Button as={Link} to="/" variant="secondary">
                     Voltar
                 </Button>
 

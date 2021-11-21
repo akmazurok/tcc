@@ -36,7 +36,8 @@
 }
 
 .cartao {
-   margin-top: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 .cartao a {
@@ -52,6 +53,6 @@
     color: red;
 }
 
-.obs small{
+.obs small {
     font-style: italic;
 }

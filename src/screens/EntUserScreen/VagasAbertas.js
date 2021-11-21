@@ -6,10 +6,10 @@ import './styles.css';
 
 const VagasAbertas = () => {
     return (
-        <div>
+        <div >
             <h5>Vagas Abertas</h5>
-            <CardGroup>
-                <Card className="card">
+            <CardGroup >
+                <Card >
                     <Card.Body>
                         <Card.Title>Vaga 4</Card.Title>
                         <Card.Text>
@@ -27,7 +27,7 @@ const VagasAbertas = () => {
 
                     </Card.Footer>
                 </Card>
-                <Card className="card">
+                <Card>
                     <Card.Body>
                         <Card.Title>Vaga 3</Card.Title>
                         <Card.Text>
@@ -43,7 +43,7 @@ const VagasAbertas = () => {
                         </div>
                     </Card.Footer>
                 </Card>
-                <Card className="card">
+                <Card>
                     <Card.Body>
                         <Card.Title>Vaga 2</Card.Title>
                         <Card.Text>

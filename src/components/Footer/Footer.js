@@ -14,6 +14,7 @@ const Footer = () => {
                 <Nav.Link as={Link} to="entidade">Tela Entidade</Nav.Link>
                 <Nav.Link as={Link} to="estudante">Tela Estudante</Nav.Link>
                 <Nav.Link as={Link} to="admin">Tela Administrador</Nav.Link>
+                <Nav.Link as={Link} to="fontes">Fontes das Imagens</Nav.Link>
             </Nav>
         </div>
     )

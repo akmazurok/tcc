@@ -11,7 +11,7 @@ const DetalheVagaAdmin = () => {
             <Card>
                 <Card.Body>
                     <Card.Text>
-                        <b>Nome Fantasia com link para detalhes </b><br />
+                        <b>Nome da Entidade</b><br />
                         <b>Endereco: </b> Endereco da Entidade<br />
                         <b>E-mail: </b> email@email.com.br<br />
                         <b>Telefone: </b> (00) 0000-0000<br />

@@ -8,7 +8,7 @@ const VagasEncerradas = () => {
         <div>
             <h5>Vagas Encerradas</h5>
             <CardGroup>
-                <Card className="card">
+                <Card>
                     <Card.Body>
                         <Card.Title>Vaga 1</Card.Title>
                         <Card.Text>
@@ -26,7 +26,7 @@ const VagasEncerradas = () => {
 
                     </Card.Footer>
                 </Card>
-                <Card className="card">
+                <Card>
                     <Card.Body>
                         <Card.Title>Vaga 8</Card.Title>
                         <Card.Text>
@@ -42,7 +42,7 @@ const VagasEncerradas = () => {
                         </div>
                     </Card.Footer>
                 </Card>
-                <Card className="card">
+                <Card>
                     <Card.Body>
                         <Card.Title>Vaga 10</Card.Title>
                         <Card.Text>

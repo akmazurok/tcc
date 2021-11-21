@@ -7,8 +7,12 @@
     text-align: center;
 }
 
-.vagas h5 {
+.vagasdestaque h5 {
     padding-top: 2rem;
+}
+
+.vagasdestaque a {
+    color: #fff;
 }
 
 .text-right {

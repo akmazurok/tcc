@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import './styles.css';
 
@@ -150,10 +151,10 @@ const FormCpf = () => {
                     />
                 </Form.Group>
 
-                <Button variant="warning" type="submit">
+                <Button variant="warning">
                     Limpar
                 </Button>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" as={Link} to="/estudante">
                     Cadastrar
                 </Button>
             </Form>

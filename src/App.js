@@ -30,6 +30,7 @@ import EstPerfilScreen from './screens/EstUserScreen/EstPerfilScreen/EstPerfilSc
 import EntPerfilScreen from './screens/EntUserScreen/EntPerfilScreen/EntPerfilScreen';
 import RedefinirSenhaScreen from './screens/LoginScreen/RedefinirSenhaScreen';
 import DetalheVagaAdminScreen from './screens/AdmUserScreen/DetalheVagaAdminScreen/DetalheVagaAdminScreen';
+import Fontes from './screens/HomeScreen/Telas/Fontes';
 
 
 /*
@@ -68,6 +69,7 @@ function App() {
           <Route path="entidades" element={<Entidades />} />
           <Route path="faq" element={<Faq />} />
           <Route path="sobre" element={<Sobre />} />
+          <Route path="fontes" element={<Fontes />} />
 
 
 
