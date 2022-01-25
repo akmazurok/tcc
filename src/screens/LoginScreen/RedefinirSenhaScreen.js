@@ -1,8 +1,54 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './styles.css';
+import CpfCnpj from '../../components/Masks/CpfCnpj';
 
 const RedefinirSenhaScreen = () => {
+    const [cpfCnpj, setCpfCnpj] = useState("");
+    // eslint-disable-next-line no-unused-vars
+    const [mask, setMask] = useState("");
+    const [alerta, setAlerta] = useState(false);
+
+    function handleAlert() {
+        setAlerta(true);
+
+    }
+
+    const ShowAlerta = () => {
+        return (
+            <Alert variant="success">
+                <p>Um link para a redefinição de senha foi enviado para o email cadastrado! </p>
+                <Alert.Link as={Link} to="/login">Clique aqui para ir para a página de login</Alert.Link>
+            </Alert>
+        );
+    }
+
+    const ShowForm = () => {
+        return (
+            <>
+                <p>Ao solicitar redefinição da senha o sistema enviará
+                    um link para o e-mail cadastrado.</p>
+                <Form>
+                    <Form.Group className="mb-3" controlId="loginId">
+                        <CpfCnpj
+                            placeholder="Digite o CPF ou CNPJ"
+                            type="tel"
+                            value={cpfCnpj}
+                            onChange={(ev, type) => {
+                                setCpfCnpj(ev.target.value);
+                                setMask(type === "CPF");
+                            }}
+                        />
+                    </Form.Group>
+                    <Button variant="primary" onClick={handleAlert}>
+                        Redefinir
+                    </Button>
+                </Form>
+            </>
+        )
+    }
+
     return (
         <Container className="mainUserScreen">
 
@@ -12,16 +58,9 @@ const RedefinirSenhaScreen = () => {
 
             <Row >
                 <Col md={9}>
-                    <span>Campo com input do cpf ou cnpj e botao para solicitar
-                        redefinicao de senha.<br />
-                        Apos clicar no botao para
-                        redefinir, o sistema verificara se o usuario tem cadastro
-                        e emitira em pop-up uma mensagem informando
-                        que um link para a redefinicao foi enviado para
-                        o email cadastrado (informar os ultimos digitos).<br />
-                        Se nao for encontrado emitira uma mensagem
-                        avisando que o CPF/CNPJ nao esta cadastrado.
-                    </span>
+
+                    {alerta ? <ShowAlerta /> : <ShowForm />}
+                   
                 </Col>
             </Row>
 
