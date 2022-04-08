@@ -31,51 +31,45 @@ import EntPerfilScreen from './screens/EntUserScreen/EntPerfilScreen/EntPerfilSc
 import RedefinirSenhaScreen from './screens/LoginScreen/RedefinirSenhaScreen';
 import DetalheVagaAdminScreen from './screens/AdmUserScreen/DetalheVagaAdminScreen/DetalheVagaAdminScreen';
 import Fontes from './screens/HomeScreen/Telas/Fontes';
-
-
-/*
-  
-  
-  */
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
     <div className="container">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="login" element={<LoginScreen />} />
-          <Route path="redefinirsenha" element={<RedefinirSenhaScreen />} />
-          <Route path="cadastro" element={<RegisterScreen />} />
-          <Route path="entidade" element={<EntUserScreen />} />
-          <Route path="estudante" element={<EstUserScreen />} />
-          <Route path="admin" element={<AdmUserScreen />} />
-          <Route path="entidade/cadastrarvaga" element={<CadastrarVagaScreen />} />
-          <Route path="entidade/vagas" element={<ListarVagasScreen />} />
-          <Route path="entidade/perfil" element={<EntPerfilScreen />} />
-          <Route path="entidade/vagas/detalhe" element={<DetalheVagaScreen />} />
-          <Route path="admin/vagas" element={<ListarVagasAdmin />} />
-          <Route path="admin/vagas/detalhe" element={<DetalheVagaAdminScreen />} />
-          <Route path="admin/entidades" element={<ListarEntidadesAdmin />} />
-          <Route path="admin/perfil" element={<AdmPerfilScreen />} />
-          <Route path="estudante/vagas" element={<VagasEstudanteScreen />} />
-          <Route path="estudante/perfil" element={<EstPerfilScreen />} />
-          <Route path="estudante/vagas/detalhe" element={<DetalheVagaEstudanteScreen />} />
-          <Route path="estudante/certificados" element={<CertificadosScreen />} />
-          <Route path="estudante/listarincricoes" element={<EstudanteInscricoes />} />
-          <Route path="vagas" element={<VagasGeral />} />
-          <Route path="vagas/detalhe" element={<DetalheVaga />} />
-          <Route path="entidades" element={<Entidades />} />
-          <Route path="faq" element={<Faq />} />
-          <Route path="sobre" element={<Sobre />} />
-          <Route path="fontes" element={<Fontes />} />
-
-
-
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
+            <Route path="login" element={<LoginScreen />} />
+            <Route path="redefinirsenha" element={<RedefinirSenhaScreen />} />
+            <Route path="cadastro" element={<RegisterScreen />} />
+            <Route path="entidade" element={<EntUserScreen />} />
+            <Route path="estudante" element={<EstUserScreen />} />
+            <Route path="admin" element={<AdmUserScreen />} />
+            <Route path="entidade/cadastrarvaga" element={<CadastrarVagaScreen />} />
+            <Route path="entidade/vagas" element={<ListarVagasScreen />} />
+            <Route path="entidade/perfil" element={<EntPerfilScreen />} />
+            <Route path="entidade/vagas/detalhe" element={<DetalheVagaScreen />} />
+            <Route path="admin/vagas" element={<ListarVagasAdmin />} />
+            <Route path="admin/vagas/detalhe" element={<DetalheVagaAdminScreen />} />
+            <Route path="admin/entidades" element={<ListarEntidadesAdmin />} />
+            <Route path="admin/perfil" element={<AdmPerfilScreen />} />
+            <Route path="estudante/vagas" element={<VagasEstudanteScreen />} />
+            <Route path="estudante/perfil" element={<EstPerfilScreen />} />
+            <Route path="estudante/vagas/detalhe" element={<DetalheVagaEstudanteScreen />} />
+            <Route path="estudante/certificados" element={<CertificadosScreen />} />
+            <Route path="estudante/listarincricoes" element={<EstudanteInscricoes />} />
+            <Route path="vagas" element={<VagasGeral />} />
+            <Route path="vagas/detalhe" element={<DetalheVaga />} />
+            <Route path="entidades" element={<Entidades />} />
+            <Route path="faq" element={<Faq />} />
+            <Route path="sobre" element={<Sobre />} />
+            <Route path="fontes" element={<Fontes />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaUserAlt } from "react-icons/fa";
@@ -6,6 +6,12 @@ import './styles.css';
 
 
 const NavBar = () => {
+
+    //user - if user, mostra menu de opcoes
+    // eslint-disable-next-line no-unused-vars
+    const [user, setUser] = useState("");
+
+
     return (
         <div className="navbar">
             <Navbar expand="lg" collapseOnSelect>
@@ -22,11 +28,11 @@ const NavBar = () => {
 
                         </Nav>
                         <Nav>
-                            <Button className="btn" as={Link} to="/login" 
+                            <Button className="btn" as={Link} to="/login"
                                 variant="outline-secondary">
-                                <FaUserAlt size={12}/>  Entrar</Button>
-                            <Button className="btn" as={Link} to="/cadastro" 
-                            variant="outline-secondary">Cadastrar</Button>
+                                <FaUserAlt size={12} />  Entrar</Button>
+                            <Button className="btn" as={Link} to="/cadastro"
+                                variant="outline-secondary">Cadastrar</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

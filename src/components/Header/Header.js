@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles.css';
-import MenuPrincipal from './NavBar';
+import NavBar from './NavBar';
 
 const Header = () => {
     return (
         <div className="header">
-            <MenuPrincipal/>
+            <NavBar/>
         </div>
     )
 }
