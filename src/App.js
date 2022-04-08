@@ -36,8 +36,9 @@ import { AuthProvider } from './context/AuthContext';
 function App() {
   return (
     <div className="container">
-      <AuthProvider>
-        <BrowserRouter>
+
+      <BrowserRouter>
+        <AuthProvider>
           <Header />
           <Routes>
             <Route path="/" element={<HomeScreen />} />
@@ -68,8 +69,9 @@ function App() {
             <Route path="fontes" element={<Fontes />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
-      </AuthProvider>
+        </AuthProvider>
+      </BrowserRouter>
+
     </div>
   );
 }

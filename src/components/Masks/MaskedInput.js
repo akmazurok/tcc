@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FormControl from 'react-bootstrap/FormControl';
 import PropTypes from 'prop-types';
 
-
+//ARQUIVO DE EXEMPLO - DELETAR DEPOIS
 //CRIAR UM INPUT QUE TENHA MASCARAS PAA USAR EM QUALQUER CAMPO
 
 const MaskedInput = (props) => {

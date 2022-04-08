@@ -1,6 +1,8 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useReducer, useState } from 'react';
 import AuthReducer from '../reducer/AuthReducer';
-import useApi from '../hooks/useApi';
+import { useApi } from '../hooks/useApi';
+import { useNavigate } from 'react-router-dom';
+
 
 const AuthContext = createContext(null);
 
@@ -13,10 +15,30 @@ const AuthProvider = ({ children }) => {
     });
 
     const api = useApi();
+    const navigate = useNavigate();
+
+    //ver se é cpf ou cnpj pra direcionar
+    const [cad, setCad] = useState('');
+
+    //arrumar
+    const verifyCad = (cpfCnpj) => {
+        setCad(JSON.stringify(cpfCnpj[0]));
+        if (cad.length > 12) {
+            console.log('entidade');
+            return ('entidade')
+        }
+
+        else {
+            console.log('estudante');
+            return ('estudante');
+        }
+    }
 
     //setar o signedIn true no localStorage quando entrar
-    const signIn = async (cadastro, password) => {
-        const data = await api.signIn(cadastro, password);
+    const signIn = async (cpfCnpj, password) => {
+
+        const data = await api.signIn(cpfCnpj, password);
+
         if (data.user) {
             localStorage.setItem('signedIn', 'true');
             localStorage.setItem('userId', JSON.stringify(data.user.id));
@@ -26,12 +48,17 @@ const AuthProvider = ({ children }) => {
                     user: data.user,
                 }
             });
+   
+            navigate('/estudante');
+
+            return true;
         }
         else {
             dispatch({
                 type: 'error',
                 payload: 'Usuário ou senha incorretos'
             });
+            return false;
         }
     }
 

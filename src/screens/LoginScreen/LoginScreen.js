@@ -1,19 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Button, Container, Form, Nav } from 'react-bootstrap';
 import './styles.css';
 import login from "../../img/login.jpg";
 import CpfCnpj from '../../components/Masks/CpfCnpj';
+import { AuthContext } from '../../context/AuthContext';
 
+/*
+    - funcao para verificar CPF e CNPJ
+    - mensagem de erro - CPF inválido / CNPJ inválido
+    - botao que chama função login
+    - mensagem de erro no login
+
+*/
 
 
 const LoginScreen = () => {
     const [cpfCnpj, setCpfCnpj] = useState("");
-    // eslint-disable-next-line no-unused-vars
-    const [mask, setMask] = useState("");
-     // eslint-disable-next-line no-unused-vars
     const [password, setPassword] = useState("");
+     // eslint-disable-next-line
+    const { signIn } = useContext(AuthContext);
     
+
+    //Quando menu estiver ok, redirecionar diretamente para a página inicial de usuário
+    /*   useEffect(() => {
+        tryLocalSignIn();
+
+    }, []); */
 
     return (
         <Container>
@@ -31,27 +44,41 @@ const LoginScreen = () => {
 
                             <CpfCnpj
                                 placeholder="Digite um CPF ou CNPJ"
-                                type="tel"
+                                type="cad"
                                 value={cpfCnpj}
-                                onChange={(ev, type) => {
+                                onChange={(ev) => {
                                     setCpfCnpj(ev.target.value);
-                                    setMask(type === "CPF");
                                 }}
                             />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="loginPassword">
                             <Form.Label>Senha:</Form.Label>
-                            <Form.Control type="password" placeholder="Digite a sua senha:" />
+                            <Form.Control
+                                type="password"
+                                placeholder="Digite a sua senha:"
+                                value={password}
+                                onChange={(ev) => {
+                                    setPassword(ev.target.value);
+                                }}
+                             
+                            />
                         </Form.Group>
 
                         <Nav className="flex-column">
                             <Nav.Link as={Link} to="/redefinirsenha">Esqueceu a senha?</Nav.Link>
                             <Nav.Link as={Link} to="/cadastro">Não tenho cadastro</Nav.Link>
                         </Nav>
-                        <Button as={Link} to="/estudante" variant="primary">
+                        <Button  
+                        onClick={() => { signIn({ cpfCnpj, password }) }} 
+                        variant="primary">
                             Entrar
                         </Button>
+
+
+                        {/*      <Button as={Link} to="/estudante" variant="primary">
+                            Entrar
+                        </Button> */}
                     </Form>
                 </Col>
             </Row>

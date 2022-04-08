@@ -69,7 +69,7 @@ CpfCnpj.propTypes = {
 };
 
 CpfCnpj.defaultProps = {
-  type: "tel",
+  type: "cad",
   value: "",
   onChange: () => { },
 };
