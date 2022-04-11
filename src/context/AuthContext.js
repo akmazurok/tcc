@@ -17,22 +17,17 @@ const AuthProvider = ({ children }) => {
     const api = useApi();
     const navigate = useNavigate();
 
-    //ver se é cpf ou cnpj pra direcionar
+    //ver se é cpf ou cnpj pra direcionar - mudar quando pegar dados do bd
     const [cad, setCad] = useState('');
 
-    //arrumar
     const verifyCad = (cpfCnpj) => {
-        setCad(JSON.stringify(cpfCnpj[0]));
-        if (cad.length > 12) {
-            console.log('entidade');
-            return ('entidade')
-        }
+        setCad(JSON.stringify(cpfCnpj.cpfCnpj));
 
-        else {
-            console.log('estudante');
+        if (cad.length > 14)
+            return ('entidade')
+        else
             return ('estudante');
-        }
-    }
+    };
 
     //setar o signedIn true no localStorage quando entrar
     const signIn = async (cpfCnpj, password) => {
@@ -48,9 +43,9 @@ const AuthProvider = ({ children }) => {
                     user: data.user,
                 }
             });
-   
-            navigate('/estudante');
 
+            //mudar quando pegar dados do BD
+            navigate(`/${verifyCad(cpfCnpj)}`);
             return true;
         }
         else {

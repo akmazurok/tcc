@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './styles.css';
-import CpfCnpj from '../../components/Masks/CpfCnpj';
+import CpfCnpj from '../../validators/masks/CpfCnpj';
 
 const RedefinirSenhaScreen = () => {
     const [cpfCnpj, setCpfCnpj] = useState("");
